@@ -1,0 +1,37 @@
+{
+  "name": "intelligent-exam-generator",
+  "version": "1.0.0",
+  "description": "An Intelligent Examination Paper Generation Framework Using Retrieval-Augmented Generation and Semantic Question Analysis",
+  "main": "server/src/server.js",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "node server/src/server.js",
+    "server": "node server/src/server.js",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "rag",
+    "examination-paper-generator",
+    "nlp",
+    "semantic-analysis",
+    "blooms-taxonomy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "docx": "^9.16.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.13.0",
+    "multer": "^2.5.0",
+    "openai": "^7.60.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.20.2",
+    "uuid": "^14.0.3"
+  }
+}
